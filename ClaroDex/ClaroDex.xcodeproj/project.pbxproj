@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF1BA99D2BD88E2100B07E5F /* ClaroDexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1BA99C2BD88E2100B07E5F /* ClaroDexApp.swift */; };
+		CF1BA99F2BD88E2100B07E5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1BA99E2BD88E2100B07E5F /* ContentView.swift */; };
+		CF1BA9A12BD88E2200B07E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1BA9A02BD88E2200B07E5F /* Assets.xcassets */; };
+		CF1BA9A42BD88E2200B07E5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1BA9A32BD88E2200B07E5F /* Preview Assets.xcassets */; };
+		CF1BA9AF2BD8AD2F00B07E5F /* PokemonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1BA9AE2BD8AD2F00B07E5F /* PokemonCardView.swift */; };
+		CF776C252BDADE9E00F1361B /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF776C242BDADE9E00F1361B /* Managers.swift */; };
+		CF776C272BDAE0CE00F1361B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF776C262BDAE0CE00F1361B /* Localizable.strings */; };
+		CF776C292BDAEF6000F1361B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF776C282BDAEF6000F1361B /* Launch Screen.storyboard */; };
+		CF8FE29B2BD959CB0005ED43 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FE29A2BD959CB0005ED43 /* NetworkManager.swift */; };
+		CF8FE29D2BD95A4B0005ED43 /* ModelPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FE29C2BD95A4B0005ED43 /* ModelPokemon.swift */; };
+		CF8FE29F2BD962250005ED43 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FE29E2BD962250005ED43 /* ViewModel.swift */; };
+		CF8FE2A82BD9E1AE0005ED43 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CF8FE2A72BD9E1AE0005ED43 /* SDWebImageSwiftUI */; };
+		CF8FE2AC2BDA02EF0005ED43 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FE2AB2BDA02EF0005ED43 /* PokemonDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF1BA9992BD88E2100B07E5F /* ClaroDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClaroDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1BA99C2BD88E2100B07E5F /* ClaroDexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaroDexApp.swift; sourceTree = "<group>"; };
+		CF1BA99E2BD88E2100B07E5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF1BA9A02BD88E2200B07E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF1BA9A32BD88E2200B07E5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF1BA9AE2BD8AD2F00B07E5F /* PokemonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardView.swift; sourceTree = "<group>"; };
+		CF776C242BDADE9E00F1361B /* Managers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
+		CF776C262BDAE0CE00F1361B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CF776C282BDAEF6000F1361B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CF8FE29A2BD959CB0005ED43 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CF8FE29C2BD95A4B0005ED43 /* ModelPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPokemon.swift; sourceTree = "<group>"; };
+		CF8FE29E2BD962250005ED43 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CF8FE2AB2BDA02EF0005ED43 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF1BA9962BD88E2100B07E5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8FE2A82BD9E1AE0005ED43 /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF1BA9902BD88E2100B07E5F = {
+			isa = PBXGroup;
+			children = (
+				CF1BA99B2BD88E2100B07E5F /* ClaroDex */,
+				CF1BA99A2BD88E2100B07E5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF1BA99A2BD88E2100B07E5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF1BA9992BD88E2100B07E5F /* ClaroDex.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1BA99B2BD88E2100B07E5F /* ClaroDex */ = {
+			isa = PBXGroup;
+			children = (
+				CF1BA9AD2BD88F3700B07E5F /* Util */,
+				CF1BA9AB2BD88F2900B07E5F /* Model */,
+				CF1BA9AA2BD88F2400B07E5F /* View */,
+				CF1BA9AC2BD88F3100B07E5F /* ViewModel */,
+				CF1BA9A02BD88E2200B07E5F /* Assets.xcassets */,
+				CF1BA9A22BD88E2200B07E5F /* Preview Content */,
+			);
+			path = ClaroDex;
+			sourceTree = "<group>";
+		};
+		CF1BA9A22BD88E2200B07E5F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF1BA9A32BD88E2200B07E5F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF1BA9AA2BD88F2400B07E5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF1BA99C2BD88E2100B07E5F /* ClaroDexApp.swift */,
+				CF1BA99E2BD88E2100B07E5F /* ContentView.swift */,
+				CF1BA9AE2BD8AD2F00B07E5F /* PokemonCardView.swift */,
+				CF8FE2AB2BDA02EF0005ED43 /* PokemonDetailView.swift */,
+				CF776C282BDAEF6000F1361B /* Launch Screen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF1BA9AB2BD88F2900B07E5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FE29C2BD95A4B0005ED43 /* ModelPokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF1BA9AC2BD88F3100B07E5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FE29E2BD962250005ED43 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF1BA9AD2BD88F3700B07E5F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FE2992BD959B40005ED43 /* NetworkLayer */,
+				CF776C242BDADE9E00F1361B /* Managers.swift */,
+				CF776C262BDAE0CE00F1361B /* Localizable.strings */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CF8FE2992BD959B40005ED43 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FE29A2BD959CB0005ED43 /* NetworkManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF1BA9982BD88E2100B07E5F /* ClaroDex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF1BA9A72BD88E2200B07E5F /* Build configuration list for PBXNativeTarget "ClaroDex" */;
+			buildPhases = (
+				CF1BA9952BD88E2100B07E5F /* Sources */,
+				CF1BA9962BD88E2100B07E5F /* Frameworks */,
+				CF1BA9972BD88E2100B07E5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClaroDex;
+			packageProductDependencies = (
+				CF8FE2A72BD9E1AE0005ED43 /* SDWebImageSwiftUI */,
+			);
+			productName = ClaroDex;
+			productReference = CF1BA9992BD88E2100B07E5F /* ClaroDex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF1BA9912BD88E2100B07E5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CF1BA9982BD88E2100B07E5F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = CF1BA9942BD88E2100B07E5F /* Build configuration list for PBXProject "ClaroDex" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1BA9902BD88E2100B07E5F;
+			packageReferences = (
+				CF8FE2A62BD9E1AE0005ED43 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = CF1BA99A2BD88E2100B07E5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF1BA9982BD88E2100B07E5F /* ClaroDex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF1BA9972BD88E2100B07E5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1BA9A42BD88E2200B07E5F /* Preview Assets.xcassets in Resources */,
+				CF776C272BDAE0CE00F1361B /* Localizable.strings in Resources */,
+				CF776C292BDAEF6000F1361B /* Launch Screen.storyboard in Resources */,
+				CF1BA9A12BD88E2200B07E5F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF1BA9952BD88E2100B07E5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8FE29B2BD959CB0005ED43 /* NetworkManager.swift in Sources */,
+				CF8FE2AC2BDA02EF0005ED43 /* PokemonDetailView.swift in Sources */,
+				CF1BA99F2BD88E2100B07E5F /* ContentView.swift in Sources */,
+				CF8FE29D2BD95A4B0005ED43 /* ModelPokemon.swift in Sources */,
+				CF1BA99D2BD88E2100B07E5F /* ClaroDexApp.swift in Sources */,
+				CF8FE29F2BD962250005ED43 /* ViewModel.swift in Sources */,
+				CF1BA9AF2BD8AD2F00B07E5F /* PokemonCardView.swift in Sources */,
+				CF776C252BDADE9E00F1361B /* Managers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF1BA9A52BD88E2200B07E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF1BA9A62BD88E2200B07E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF1BA9A82BD88E2200B07E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClaroDex/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claro.ClaroDex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF1BA9A92BD88E2200B07E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClaroDex/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claro.ClaroDex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF1BA9942BD88E2100B07E5F /* Build configuration list for PBXProject "ClaroDex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1BA9A52BD88E2200B07E5F /* Debug */,
+				CF1BA9A62BD88E2200B07E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF1BA9A72BD88E2200B07E5F /* Build configuration list for PBXNativeTarget "ClaroDex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1BA9A82BD88E2200B07E5F /* Debug */,
+				CF1BA9A92BD88E2200B07E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF8FE2A62BD9E1AE0005ED43 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF8FE2A72BD9E1AE0005ED43 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF8FE2A62BD9E1AE0005ED43 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CF1BA9912BD88E2100B07E5F /* Project object */;
+}

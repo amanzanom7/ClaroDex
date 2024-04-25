@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ClaroDex
+
+  Created by Mugrosito on 25/04/24.
+  
+*/
+
+"titleNav" = "ClaroDex";
+"titleSearch" = "Busca por nombre, número o tipo";
+"simbolNumber" = "#";
+"titleNavDetail" = "Poke-info";
+"feature" = "Caracteristicas:";
+"titleTypeDetail" = "Tipo:";
+"titleTypeSpeedDetail" = "Velocidad:";
+"titleTypeDefenseDetail" = "Defensa:";
+"titleTypeDesense2Detail" = "Defensa especial:";
+"titleShinyDetail" = "Shiny";
